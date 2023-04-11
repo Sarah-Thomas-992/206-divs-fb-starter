@@ -97,9 +97,8 @@ textarea {
 
 
 html {
-    background: url('../img/marigold.png') no-repeat center;
+    background: lightblue;
     height: 100%;
-    background-size: cover;
 }
 
 body {
@@ -110,28 +109,60 @@ body {
 }
 
 .wrapper {
-    /*add display:flex and set justify-content to space-between*/
     font-weight: 400;
     display: flex;
+    align-items: center;
+    justify-content: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-    width: 700px;
+    flex-flow: row wrap;
 }
 
-.div-1,
-.div-2,
-.div-3 {
+header, 
+main,
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: darkblue;
+}
+
+header, 
+footer{
+    background-color: lightgoldenrodyellow;
+}
+
+main{
+    border-bottom: 10px dotted lightgoldenrodyellow;
+}
+
+header h1{
+    font-size: 1.2em;
+}
+
+main h2{
+    font-size: 1.8em;
+}
+
+.wrapper .div-1,
+.wrapper .div-2,
+.wrapper .div-3 {
     /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
     color: darkblue;
     line-height: 1.2em;
-    font-size: 1.2em;
-    width: 275px;
+    font-size: 1.1em;
+    width: 30%;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    border: 8px dotted pink;
-    padding: 0 20px;
-    margin: 10px 0;
+    align-items: center;
+}
+
+footer h2{
+    font-size: 1.2em;
+}
+
+.wrapper .bunny{
+    margin: 20px auto;
 }
 
 
